@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="intro">
+        <h1 id="titulo1">Titulo del proyecto </h1>
+        <p id="context"> Bienvenid@ viajer@ del tiempo. Nos remontamos a 1908, especificamente al 8 de marzo, como es bien sabido
+            para tu época, todos los años conmemoramos esta fecha por la terrible tragedia en Nueva York, donde 
+            trabajadoras textiles (costureras industriales) se habían declarado en huelga,
+            ellas luchaban por sus condiciones laborales: aumento de salarios, reducción de la jornada laboral a 10 hs,
+            y fin del trabajo infantil. Durante esta huelga pacífica 129 mujeres murieron calcinadas en la fábrica
+            Cotton Textile Factory, en un incendio provocado por sus dueños.
+        </p>
+
+        <p id="mision">
+            Ahora, tienes una misión, has sido elegid@ para descifrar un mensaje recibido por una de las participantes de la huelga
+            y tienes la oportunidad de enviar un solo mensaje para ellas, este, por supuesto, debe estar encriptado para no 
+            dar señales de lo que podría suceder. Aquí te mostramos el mensaje.
+        </p>
+    </div>
+<div class="desarrollo">
+    <div class="mensaje">
+        carta encriptada 
+
+        <textarea id="respuesta" name="textarea" maxlength="280" placeholder="Escribe tu mensaje para descifrarlo"></textarea>
+        <span id="contador"> 0/500 </span>
+        <label for="offset"> palabra clave</label>
+        <input id="offset" type="number" min="-100" max="100" placeholder="ingresa la contraseña" name="offset" step="1">
+    </div>
+
+    <div class="btnGrupo">
+        <button id="cipher" name="cipher" type="button"> <i class="fas fa-lock"> 
+        </i> cifrar </button>
+        <button id="descipher" name="descipher" type="button"> descifrar </button>
+    </div>
+</div>
+
+    <script src="assets/css/js/script.js"></script>
+</body>
+</html>
